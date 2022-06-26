@@ -21,7 +21,7 @@ p {
   .section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 80vh;
+    height: 90vh;
   }
 }
 
@@ -66,8 +66,8 @@ p {
   }
 
   .intro-image {
-    width: 750px;
-    height: 500px;
+    width: 90%;
+    height: 90%;
   }
 }
 
@@ -167,14 +167,98 @@ p {
 @media (min-width: 900px) {
   .process-section {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
   }
   .process-title {
     grid-column: 1 / 4;
     justify-self: left;
-    align-self: center;
+    transform: translateY(2rem);
   }
 
   .process-step {
     margin: 0;
   }
+}
+
+/* Final Section styling */
+
+.final-section {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.final-title {
+  font-size: 1.3rem;
+}
+
+.industries-flex {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.industry {
+  margin: 0.5rem;
+}
+
+.contact-title {
+  margin: 1rem 0;
+}
+
+.contact-mail {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 900px) {
+  .final-section {
+    padding: 1rem;
+  }
+  .final-title {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .industries-flex {
+    align-content: center;
+    margin-top: 5rem;
+  }
+  .industry {
+    flex: 1 1 auto;
+    font-size: 1.2rem;
+  }
+
+  .contact-title {
+    margin-top: 5rem;
+    font-size: 1.2rem;
+  }
+
+  .contact-mail {
+    font-size: 1.5rem;
+  }
+
+  .industry + .industry {
+    border-left: solid black 1px;
+  }
+}
+
+/* Footer Styling */
+
+.footer {
+  background-color: rgb(167, 164, 164);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.networks-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-icon {
+  width: 3rem;
+  height: 3rem;
+  color: white;
 }
