@@ -84,12 +84,17 @@ p {
   height: 330px;
 }
 
+.title-symbol {
+  height: 30px;
+  width: 30px;
+}
+
 .services-div {
   padding: 1rem;
 }
 
 .single-service {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .service-list {
@@ -123,5 +128,53 @@ p {
   .service-list {
     list-style: circle;
     padding-left: 1.5rem;
+  }
+}
+
+/* Process div styling */
+
+.process-section {
+  padding: 1.5rem;
+}
+
+.process-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.process-step {
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.process-number {
+  height: 150px;
+  width: 150px;
+  color: red;
+}
+
+.step-title {
+  margin-top: 0.5rem;
+  font-weight: 350;
+}
+
+.step-description {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+  .process-section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .process-title {
+    grid-column: 1 / 4;
+    justify-self: left;
+    align-self: center;
+  }
+
+  .process-step {
+    margin: 0;
   }
 }
