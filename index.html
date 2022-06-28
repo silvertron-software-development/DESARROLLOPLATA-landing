@@ -18,8 +18,22 @@
       <h1>Silver Tech</h1>
       <div class="nav-right-side">
         <div>
-          <span class="language-option">ES</span>
-          <span class="language-option">EN</span>
+          <button
+            type="button"
+            class="language-option"
+            id="ES"
+            onclick="changeLanguage('es')"
+          >
+            ES
+          </button>
+          <button
+            type="button"
+            class="language-option"
+            id="EN"
+            onclick="changeLanguage('en')"
+          >
+            EN
+          </button>
         </div>
         <!-- <button type="button" class="menu-button">Toggle</button> -->
       </div>
@@ -27,8 +41,10 @@
     <main class="main">
       <section class="section intro-section">
         <div class="intro-text">
-          <h2 class="intro-title">¡Algo increible no se construye solo!</h2>
-          <p class="intro-desc">
+          <h2 class="intro-title" id="intro-title">
+            ¡Algo increible no se construye solo!
+          </h2>
+          <p class="intro-desc" id="intro-desc">
             Partner de transformación y crecimiento digital para tu negocio
           </p>
         </div>
@@ -39,7 +55,7 @@
         />
       </section>
       <section class="section middle-section">
-        <h3 class="middle-title">
+        <h3 class="middle-title" id="middle-title">
           Lo que queremos decir con transformación y crecimiento digital
         </h3>
         <img
@@ -54,14 +70,20 @@
               alt="coding symbol"
               class="title-symbol"
             />
-            <h3 class="service-title">Desarrollo de Software</h3>
+            <h3 class="service-title" id="service-title">
+              Desarrollo de Software
+            </h3>
             <ul class="service-list">
-              <li class="service-bullet">Aplicaciones Web</li>
-              <li class="service-bullet">Landing Page</li>
-              <li class="service-bullet">Soluciones Empresariales</li>
-              <li class="service-bullet">Productos con datos</li>
-              <li class="service-bullet">E-Commerce</li>
-              <li class="service-bullet">Datos</li>
+              <li class="service-bullet" id="web-apps">Aplicaciones Web</li>
+              <li class="service-bullet" id="landing">Landing Page</li>
+              <li class="service-bullet" id="business-solutions">
+                Soluciones Empresariales
+              </li>
+              <li class="service-bullet" id="data-products">
+                Productos con datos
+              </li>
+              <li class="service-bullet" id="e-commerce">E-Commerce</li>
+              <li class="service-bullet" id="data">Datos</li>
             </ul>
           </div>
           <div class="single-service">
@@ -72,10 +94,10 @@
             />
             <h3 class="service-title">Growth Marketing</h3>
             <ul class="service-list">
-              <li class="service-bullet">
+              <li class="service-bullet" id="digital-marketing">
                 Marketing digital enfocado al crecimiento
               </li>
-              <li class="service-bullet">
+              <li class="service-bullet" id="social-media">
                 Manejo de Redes Sociales y anuncios pagados
               </li>
               <li class="service-bullet">SEO</li>
@@ -84,15 +106,15 @@
         </div>
       </section>
       <section class="section process-section">
-        <h3 class="process-title">Nuestro Proceso</h3>
+        <h3 class="process-title" id="process-title">Nuestro Proceso</h3>
         <div class="process-step">
           <img
             class="process-number"
             src="./icons/1-solid.svg"
             alt="Number 1"
           />
-          <h4 class="step-title">Diagnóstico</h4>
-          <p class="step-description">
+          <h4 class="step-title" id="diagnostics">Diagnóstico</h4>
+          <p class="step-description" id="diagnostics-description">
             Detectamos las necesidades operativas y administrativas de tu
             negocio
           </p>
@@ -103,8 +125,8 @@
             src="./icons/2-solid.svg"
             alt="Number 2"
           />
-          <h4 class="step-title">Diagnóstico</h4>
-          <p class="step-description">
+          <h4 class="step-title" id="planning-title">Plan</h4>
+          <p class="step-description" id="planning-description">
             Diseñamos un plan de trabajo con metodologías ágiles de desarrollo
             por plan mensual o anual
           </p>
@@ -115,20 +137,24 @@
             src="./icons/3-solid.svg"
             alt="Number 3"
           />
-          <h4 class="step-title">Ejecución</h4>
-          <p class="step-description">Proponemos e implementamos tu solución</p>
+          <h4 class="step-title" id="execution-title">Ejecución</h4>
+          <p class="step-description" id="execution-description">
+            Proponemos e implementamos tu solución
+          </p>
         </div>
       </section>
       <section class="final-section">
-        <h3 class="final-title">Industrias con las que trabajamos</h3>
+        <h3 class="final-title" id="final-title">
+          Industrias con las que trabajamos
+        </h3>
         <div class="industries-flex">
-          <span class="industry">Sector Médico</span>
-          <span class="industry">Saas</span>
-          <span class="industry">Educación</span>
-          <span class="industry">Tecnología</span>
-          <span class="industry">Muchas más</span>
+          <span class="industry" id="medical-industry">Sector Médico</span>
+          <span class="industry" id="saas">Saas</span>
+          <span class="industry" id="education">Educación</span>
+          <span class="industry" id="tech-industry">Tecnología</span>
+          <span class="industry" id="more-industries">Muchas más</span>
         </div>
-        <h3 class="contact-title">Contáctanos</h3>
+        <h3 class="contact-title" id="contact-title">Contáctanos</h3>
         <h4 class="contact-mail">contact@blablabla.com</h4>
       </section>
     </main>
@@ -153,5 +179,6 @@
         />
       </div>
     </footer>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
