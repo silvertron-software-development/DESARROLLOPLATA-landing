@@ -29,6 +29,7 @@ const techIndustry = document.querySelector('#tech-industry')
 const moreIndustries = document.querySelector('#more-industries')
 const contactTitle = document.querySelector('#contact-title')
 const dateDiv = document.querySelector('#date')
+const chevronButtons = document.querySelectorAll('.icon-span')
 
 const esLanguage = {
   introTitle: '¡Algo increible no se construye solo!',
@@ -157,3 +158,13 @@ if (window.location.hash) {
     contactTitle.textContent = enLanguage.contactTitle
   }
 }
+
+chevronButtons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    console.log(e)
+    const elementDesc = button.nextElementSibling
+    console.log(elementDesc.classList)
+    elementDesc.classList.toggle('active')
+    console.log(elementDesc.classList)
+  })
+})

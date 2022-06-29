@@ -163,6 +163,7 @@ p {
   padding: 1rem;
   margin: 1rem 0;
   text-align: center;
+  height: fit-content;
 }
 
 .process-number {
@@ -174,11 +175,29 @@ p {
 .step-title {
   margin-top: 0.5rem;
   font-weight: 350;
+  margin-bottom: 1rem;
+}
+
+.icon-span {
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all linear 0.2s;
+}
+
+.icon-span:hover {
+  color: goldenrod;
 }
 
 .step-description {
   margin-top: 1rem;
   font-size: 0.9rem;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.active {
+  height: 50px;
 }
 
 @media (min-width: 900px) {
