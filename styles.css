@@ -167,9 +167,9 @@ p {
 }
 
 .process-number {
-  height: 150px;
-  width: 150px;
-  color: red;
+  font-size: 9rem;
+  text-align: center;
+  color: rgb(129, 126, 126);
 }
 
 .step-title {
@@ -180,8 +180,9 @@ p {
 
 .icon-span {
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   transition: all linear 0.2s;
+  color: rgb(74, 91, 127);
 }
 
 .icon-span:hover {
@@ -197,7 +198,7 @@ p {
 }
 
 .active {
-  height: 50px;
+  height: 55px;
 }
 
 @media (min-width: 900px) {
@@ -282,8 +283,7 @@ p {
 /* Footer Styling */
 
 .footer {
-  background-color: rgb(167, 164, 164);
-  color: white;
+  background-color: black;
   text-align: center;
   padding: 2rem;
 }
@@ -294,7 +294,19 @@ p {
 }
 
 .footer-icon {
-  width: 3rem;
-  height: 3rem;
+  font-size: 2rem;
   color: white;
+  cursor: pointer;
+  transition: color 0.2s ease-in;
+}
+
+.footer-icon:hover {
+  color: rgb(85, 133, 237);
+  text-shadow: 0 0 0.2em rgb(85, 133, 237);
+}
+
+@media (min-width: 900px) {
+  .footer-icon {
+    font-size: 3rem;
+  }
 }
