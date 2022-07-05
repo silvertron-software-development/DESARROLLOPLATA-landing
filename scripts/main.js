@@ -2,6 +2,7 @@
 const esButton = document.querySelector('#ES')
 const enButton = document.querySelector('#EN')
 // Text Elements
+const mainTitle = document.querySelector('#main-title')
 const introTitle = document.querySelector('#intro-title')
 const introDescription = document.querySelector('#intro-desc')
 const middleTitle = document.querySelector('#middle-title')
@@ -9,7 +10,6 @@ const serviceTitle = document.querySelector('#service-title')
 const webApps = document.querySelector('#web-apps')
 const landing = document.querySelector('#landing')
 const business = document.querySelector('#business-solutions')
-const dataProducts = document.querySelector('#data-products')
 const eCommerce = document.querySelector('#e-commerce')
 const dataBullet = document.querySelector('#data')
 const digitalMarketing = document.querySelector('#digital-marketing')
@@ -32,6 +32,7 @@ const dateDiv = document.querySelector('#date')
 const chevronButtons = document.querySelectorAll('.icon-span')
 
 const esLanguage = {
+  mainTitle: 'Desarrollo de software Plata',
   introTitle: '¡Algo increible no se construye solo!',
   introDescription:
     'Partner de transformación y crecimiento digital para tu negocio',
@@ -40,7 +41,6 @@ const esLanguage = {
   webApps: 'Aplicaciones Web',
   landing: 'Landing Page',
   business: 'Soluciones Empresariales',
-  dataProducts: 'Productos con datos',
   eCommerce: 'E-Commerce',
   dataBullet: 'Datos',
   digitalMarketing: 'Marketing digital enfocado al crecimiento',
@@ -63,6 +63,7 @@ const esLanguage = {
   contactTitle: 'Contáctanos',
 }
 const enLanguage = {
+  mainTitle: 'Plata software development',
   introTitle: 'Amazing projects are not built alone!',
   introDescription:
     'Digital growth and transformation partner for your business',
@@ -71,11 +72,10 @@ const enLanguage = {
   webApps: 'Web Apps',
   landing: 'Landing Sites',
   business: 'Business Solutions',
-  dataProducts: 'Data-built products',
   eCommerce: 'E-Commerce',
   dataBullet: 'Data',
   digitalMarketing: 'Digital marketing directed towards business growth',
-  socialMedia: 'Social media managemente and paid ads',
+  socialMedia: 'Social media management and paid ads',
   processTitle: 'Our process',
   diagnostics: 'Diagnostics',
   diagnosticsDesc:
@@ -103,6 +103,7 @@ if (window.location.hash) {
   // Set the content of the webpage
   // depending on the hash value
   if (window.location.hash == '#es') {
+    mainTitle.textContent = esLanguage.mainTitle
     introTitle.textContent = esLanguage.introTitle
     introDescription.textContent = esLanguage.introDescription
     middleTitle.textContent = esLanguage.middleTitle
@@ -110,7 +111,6 @@ if (window.location.hash) {
     webApps.textContent = esLanguage.webApps
     landing.textContent = esLanguage.landing
     business.textContent = esLanguage.business
-    dataProducts.textContent = esLanguage.dataProducts
     eCommerce.textContent = esLanguage.eCommerce
     dataBullet.textContent = esLanguage.dataBullet
     digitalMarketing.textContent = esLanguage.digitalMarketing
@@ -130,6 +130,7 @@ if (window.location.hash) {
     moreIndustries.textContent = esLanguage.moreIndustries
     contactTitle.textContent = esLanguage.contactTitle
   } else if (window.location.hash == '#en') {
+    mainTitle.textContent = enLanguage.mainTitle
     introTitle.textContent = enLanguage.introTitle
     introDescription.textContent = enLanguage.introDescription
     middleTitle.textContent = enLanguage.middleTitle
@@ -137,7 +138,6 @@ if (window.location.hash) {
     webApps.textContent = enLanguage.webApps
     landing.textContent = enLanguage.landing
     business.textContent = enLanguage.business
-    dataProducts.textContent = enLanguage.dataProducts
     eCommerce.textContent = enLanguage.eCommerce
     dataBullet.textContent = enLanguage.dataBullet
     digitalMarketing.textContent = enLanguage.digitalMarketing
