@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -97,6 +98,70 @@ p {
   }
 
   .menu-button {
+    display: none;
+  }
+}
+
+/* Aside Styling */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  transform: translate(-100%);
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(128, 128, 128, 0.425);
+  transition: all 0.3s linear;
+}
+
+.modal-open {
+  z-index: 10;
+  transform: translate(0);
+}
+
+.aside-menu {
+  margin: 0 auto;
+  width: 70vw;
+  border-radius: 1rem;
+  height: 65vh;
+  padding: 7rem 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  background-color: transparent;
+  color: rgb(253, 253, 253);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  top: 5%;
+  right: 15%;
+}
+
+.modal-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-link {
+  margin-top: 1rem;
+}
+
+.list-link > a,
+.list-link > a:visited,
+.list-link > a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  .modal {
     display: none;
   }
 }

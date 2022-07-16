@@ -23,7 +23,7 @@
       <div class="nav-list-div">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="./portfolio.html">Proyectos</a>
+            <a href="./portfolio.html" id="project-anchor">Proyectos</a>
           </li>
         </ul>
       </div>
@@ -45,12 +45,33 @@
           >
             EN
           </button>
-          <button type="button" class="menu-button">
+          <button type="button" class="menu-button" onclick="toggleModal()">
             <i class="fa-solid fa-bars"></i>
           </button>
         </div>
       </div>
     </nav>
+    <aside class="modal" id="modal">
+      <div class="aside-menu">
+        <button
+          type="button"
+          class="close-btn"
+          id="close-btn"
+          onclick="toggleModal()"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h3>Plata Desarrollo</h3>
+        <ul class="modal-list">
+          <li class="list-link">
+            <a href="./index.html" id="index-menu-a">Inicio</a>
+          </li>
+          <li class="list-link">
+            <a href="./portfolio.html" id="projects-menu-a">Proyectos</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
     <main class="main">
       <section class="section intro-section">
         <div class="intro-text">
@@ -190,5 +211,6 @@
     </footer>
 
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/menuScript.js"></script>
   </body>
 </html>

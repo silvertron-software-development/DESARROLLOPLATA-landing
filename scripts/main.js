@@ -4,6 +4,9 @@ const enButton = document.querySelector('#EN')
 // Text Elements
 const mainTitle = document.querySelector('#main-title')
 const introTitle = document.querySelector('#intro-title')
+const projectAnchor = document.querySelector('#project-anchor')
+const indexMenuA = document.querySelector('#index-menu-a')
+const projectsMenuA = document.querySelector('#projects-menu-a')
 const introDescription = document.querySelector('#intro-desc')
 const middleTitle = document.querySelector('#middle-title')
 const serviceTitle = document.querySelector('#service-title')
@@ -33,6 +36,10 @@ const chevronButtons = document.querySelectorAll('.icon-span')
 
 const esLanguage = {
   mainTitle: 'Desarrollo de software Plata',
+  projectAnchor: 'Proyectos',
+  indexAnchor: 'Inicio',
+  indexMenuA: 'Inicio',
+  projectsMenuA: 'Proyectos',
   introTitle: '¡Algo increible no se construye solo!',
   introDescription:
     'Partner de transformación y crecimiento digital para tu negocio',
@@ -64,6 +71,10 @@ const esLanguage = {
 }
 const enLanguage = {
   mainTitle: 'Plata software development',
+  projectAnchor: 'Projects',
+  indexAnchor: 'Home',
+  indexMenuA: 'Home',
+  projectsMenuA: 'Projects',
   introTitle: 'Amazing projects are not built alone!',
   introDescription:
     'Digital growth and transformation partner for your business',
@@ -104,6 +115,9 @@ if (window.location.hash) {
   // depending on the hash value
   if (window.location.hash == '#es') {
     mainTitle.textContent = esLanguage.mainTitle
+    projectAnchor.textContent = esLanguage.projectAnchor
+    indexMenuA.textContent = esLanguage.indexMenuA
+    projectsMenuA.textContent = esLanguage.projectsMenuA
     introTitle.textContent = esLanguage.introTitle
     introDescription.textContent = esLanguage.introDescription
     middleTitle.textContent = esLanguage.middleTitle
@@ -131,6 +145,9 @@ if (window.location.hash) {
     contactTitle.textContent = esLanguage.contactTitle
   } else if (window.location.hash == '#en') {
     mainTitle.textContent = enLanguage.mainTitle
+    projectAnchor.textContent = enLanguage.projectAnchor
+    indexMenuA.textContent = enLanguage.indexMenuA
+    projectsMenuA.textContent = enLanguage.projectsMenuA
     introTitle.textContent = enLanguage.introTitle
     introDescription.textContent = enLanguage.introDescription
     middleTitle.textContent = enLanguage.middleTitle
