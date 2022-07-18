@@ -34,6 +34,14 @@ const contactTitle = document.querySelector('#contact-title')
 const dateDiv = document.querySelector('#date')
 const chevronButtons = document.querySelectorAll('.icon-span')
 
+const hashValue = window.location.hash
+
+if (hashValue) {
+  projectAnchor.setAttribute('href', `./portfolio.html${hashValue}`)
+  indexMenuA.setAttribute('href', `./index.html${hashValue}`)
+  projectsMenuA.setAttribute('href', `./portfolio.html${hashValue}`)
+}
+
 const esLanguage = {
   mainTitle: 'Desarrollo de software Plata',
   projectAnchor: 'Proyectos',

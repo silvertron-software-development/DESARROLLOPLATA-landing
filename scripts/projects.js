@@ -7,6 +7,14 @@ const indexAnchor = document.querySelector('#index-anchor')
 const indexMenuA = document.querySelector('#index-menu-a')
 const projectsMenuA = document.querySelector('#projects-menu-a')
 
+const hashValue = window.location.hash
+
+if (hashValue) {
+  indexAnchor.setAttribute('href', `./index.html${hashValue}`)
+  indexMenuA.setAttribute('href', `./index.html${hashValue}`)
+  projectsMenuA.setAttribute('href', `./portfolio.html${hashValue}`)
+}
+
 const esLanguage = {
   mainTitle: 'Desarrollo de software Plata',
   indexAnchor: 'Inicio',
